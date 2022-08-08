@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded/Internal Css</title>
+    <style>
+        /* Universal Selector*/
+        *{margin:0px; padding:0px;}
+        /*ID Selector*/
+        #container{
+            width:1320px;  min-height:500px;
+            background-color: #ccddee;
+            margin:auto auto;
+        }
+        /* Class Selector*/
+        .myheading{
+            font-size: 30px; font-variant: small-caps;
+            color:#00ffcc;
+        }
+        /* Type Selector*/
+        body{
+            background-color:#00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 class="myheading">Welcome to the site</h1>
+    </div>
+</body>
+</html>

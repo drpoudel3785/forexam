@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <title>Login Register</title>
+</head>
+<body style="border:1px solid #ff0000; width:1320px; margin:auto auto; min-height:500px">
+    <form method="POST" action="" id="login" name="login" enctype="multipart/form-data">
+        <fieldset>
+            <legend style="color:red">Login</legend>
+        <input  type="text" name="username" placeholder="Username" required/>
+        <br/>
+        <input type="password" name="password" placeholder="Password" required>
+        <br/>
+        <input type="submit" name="submit" value="Login"/>
+    </fieldset>
+    </form>
+
+
+    <br/>
+    <form method="POST" action="" name="register" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Register</legend>
+            <label>Username</label><br/>
+            <input type="text" name="username" /><br/>
+            <label>Password</label><br/>
+            <input type="password" name="password" /><br/>
+            <label>Email</label><br/>
+            <input type="email" name="email" /><br/>
+            <label>DOB</label><br/>
+            <input type="date" name="dob" /><br/>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="M" checked/>Male
+            <input type="radio" name="gender" value="F"/>FeMale<br/>
+            <label>Course</label>
+            <input type="checkbox" name="php" value="PHP" checked/>PHP
+            <input type="checkbox" name="java" value="Java"/>Java
+            <input type="checkbox" name="python" value="Python"/>Python<br/>
+            <label>Photo</label><br/>
+            <input type="file" name="photo" /><br/>
+            <label>City</label>
+            <select name="city" size="1">
+                <option value="--">--Please Choose--</option>
+                <option value="ktm">Kathmandu</option>
+                <option value="lpt">Lalitpur</option>
+                <option value="bhk">Bhaktapur</option>
+                <option value="brt">Biratnagar</option>
+                <option value="pkr">Pokhara</option>
+                <option value="otr ">Others</option>
+            </select><br/>
+            <label>Message</label>
+            <textarea rows="7" cols="50" name="message"></textarea><br/>
+            <input type="submit" name="submit" value="Register"/>
+            <input type="reset" name="reset" value="Cancel"/><br/>
+        </fieldset>
+        </form>
+    
+</body>
+</html>
